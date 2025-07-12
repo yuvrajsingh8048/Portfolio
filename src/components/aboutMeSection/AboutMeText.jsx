@@ -28,8 +28,15 @@ const AboutMeText = () => {
     className='mt-2 text-lightOrange'>Click below button to download my resume
     </motion.p>
     
-     <a href="../../public/resume/Resume.pdf" download="Resume.pdf" target='_blank' rel={"noopener noreferrer"} className='flex sm:mx-auto px-4 py-2 bg-gradient-to-r from-orange to-cyan hover:from-cyan hover:to-orange text-white rounded-full font-bold h-fit sm:mt-10 md:mt-2 w-fit'> My Resume
-        </a>
+   <a
+  href="/resume.pdf"
+  download="resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex sm:mx-auto px-4 py-2 bg-gradient-to-r from-orange to-cyan hover:from-cyan hover:to-orange text-white rounded-full font-bold h-fit sm:mt-10 md:mt-2 w-fit"
+>
+  My Resume
+</a>
 
     </div>
   )
