@@ -3,6 +3,7 @@ import NavbarLogo from './NavbarLogo'
 import NavbarLinks from './NavbarLinks'
 import NavbarBtn from './NavbarBtn'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { ImCross } from "react-icons/im";
 
 
 
@@ -21,9 +22,9 @@ const NavbarMain = () => {
             </div>
             <NavbarBtn />
         </div>
-        <div className='h-[60px] lg:hidden sm:block flex p-3 bg-black items-center justify-center rounded-3xl border-[0.5px] border-orange ml-4'>
+        <div className='h-[60px] lg:hidden sm:block flex p-3 bg-black items-center justify-center rounded-3xl border-[0.5px] border-orange ml-1'>
             <button onClick={toggleMenu} className='text-2xl rounded-full text-white p-1'>
-                <RxHamburgerMenu />
+                {menu ? <ImCross/> : <RxHamburgerMenu /> }
             </button>
         </div>
     </nav>
