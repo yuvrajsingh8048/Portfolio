@@ -11,10 +11,10 @@ const HeroPic = () => {
           whileInView="show"
           viewport={{once: false, amount: 0}}
     className='h-full flex items-center justify-center sm:my-20 lg:my-0'>
-      <img src="/pictures/HeroPic.jpg" alt="Yuvraj Singh"  className='max-h-[410px] w-fit rounded-r-full rounded-l-full rounded-b-full'/>
-      <div className='absolute -z-10 flex justify-center items-center animate-pulse'>
+      <img src="/pictures/profile.png" alt="Yuvraj Singh"  className='max-h-[450px] w-fit rounded-full'/>
+      {/* <div className='absolute -z-10 flex justify-center items-center animate-pulse'>
         <FaRegCircle className='md:h-[90%] sm:h-[120%] min-h-[530px] w-[420px] text-cyan blur-md animate-[spin_20s_linear, infinite]'/>
-      </div>
+      </div> */}
     </motion.div>
   )
 }

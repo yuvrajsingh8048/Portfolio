@@ -14,7 +14,7 @@ const NavbarMain = () => {
 }
 
   return (
-    <nav className=' max-w-[1300px] w-full px-4 flex fixed left-[50%] -translate-x-[50%] z-20 gap-4mt-2'>
+    <nav className='mt-1 max-w-[1300px] w-full px-4 flex fixed left-[50%] -translate-x-[50%] z-20 gap-4mt-2'>
         <div className='sm:h-[60px] lg:h-[80px] flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center sm:p-3 md:p-6 rounded-full  border-[0.5px] border-orange'>
             <NavbarLogo />
             <div className={`${menu ? "sm:block": "sm:hidden"} lg:block`}>

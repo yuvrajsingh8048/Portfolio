@@ -1,10 +1,15 @@
 import React from 'react'
-import { BsArrowUpRight } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 import { fadeIn } from '../../framerMotion/variants'
 import {motion} from 'framer-motion'
 
 
 const projects = [
+  {
+    name: "Frontend",
+    image: "/pictures/projects/frontend.png",
+    repoLink: "https://github.com/yuvrajsingh8048/SRV_FrontendTask"
+  },
   {
     name: "Todo",
     image: "/pictures/projects/Todo.png",
@@ -33,7 +38,7 @@ const SingleProject = () => {
       {projects.map((element, index) => (
         <div
           key={index}
-          className='flex flex-col items-center text-center shadow-xl rounded-xl overflow-hidden max-w-[400px] bg-gradient-to-r from-grey to-darkGrey'
+          className='flex flex-col items-center text-center shadow-xl rounded-xl overflow-hidden max-w-[400px] bg-lightGrey'
         >
           <h2 className='text-orange text-2xl font-bold mt-5 mb-3'>{element.name}</h2>
           <img src={element.image} alt={element.name} className='h-[200px] w-full' />
@@ -42,7 +47,7 @@ const SingleProject = () => {
             target='_blank'
             className='w-full py-2 flex items-center justify-center gap-2 bg-gradient-to-r from-cyan to-orange hover:bg-gradient-to-r hover:from-orange hover:to-cyan font-bold text-white'
           >
-            View Code <BsArrowUpRight className='text-xl'/>
+            View Code <FaGithub className='text-xl'/>
           </a>
         </div>
       ))}
